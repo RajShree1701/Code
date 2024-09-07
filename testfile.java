@@ -92,13 +92,31 @@
 //     }
 // }
 
+// public class testfile
+// {
+//     public static void main(String[] args) {
+//         int a[]={1,2,3,4,5,6,7,8,9};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.println(a[i]+ " ");
+//         }
+//     }
+// }
+
 public class testfile
 {
     public static void main(String[] args) {
-        int a[]={1,2,3,4,5,6,7,8,9};
-        for(int i=0;i<a.length;i++)
+        int a=4;
+        int b=10;
+        int c=8;
+        int d=16;
+        if(a<b || d<c)
         {
-            System.out.println(a[i]+ " ");
+            System.out.println("Raj");
+        }
+        else
+        {
+            System.out.println("Shree");
         }
     }
 }
