@@ -6,25 +6,25 @@ public class zeropositioneven {
         int a[]={2,1,3,4,4,9,6,7,8};
         System.out.println(zeroeven(a));
     }
-    public static int zeroeven(int a[])
+    public static int zeroeven(int b[])
     {
-        int n=a.length;
+        int n=b.length;
         ArrayList<Integer>even=new ArrayList<>();
         ArrayList<Integer>odd=new ArrayList<>();
         if(n<=3)
         {
             return 0;
         }
-        even.add(a[0]);
+        even.add(b[0]);
         for(int i=1;i<n;i++)
         {
             if(i%2==0)
             {
-                even.add(a[i]);
+                even.add(b[i]);
             }
             else
             {
-                odd.add(a[i]);
+                odd.add(b[i]);
             }
         }
         Collections.sort(even);
