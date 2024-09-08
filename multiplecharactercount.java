@@ -1,6 +1,7 @@
 public class multiplecharactercount {
     public static void main(String[] args) {
-        String s="bbbbddddrrrrrtttttyyyyyy";
+        // String s="bbbbddddrrrrrtttttyyyyyy";
+        String s="a";
         System.out.println(count1(s));
     }
     public static String count1(String s)
