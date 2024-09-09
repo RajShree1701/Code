@@ -14,27 +14,53 @@ Input : 10 20 30
 Output : No 
 Explanation 2: You can’t survive even if you buy food because the maximum number of units you can buy in one day is less the required food for one day.
 */
-import java.lang.Math;
-public class maxfood {
+ import java.lang.Math;
+// public class maxfood {
+//     public static void main(String[] args) {
+//         int s=10;
+//         int n=16;
+//         int m=2;
+//         if(n<m)
+//         {
+//             System.out.println("no");
+//         }
+//         int totalmeal=s*m;
+//         int totalsunday=(s/7);
+//         int availableday=s-totalsunday;
+//         int minday=(int)Math.ceil((double)totalmeal/n);
+//         if(minday<=availableday)
+//         {
+//             System.out.println("yes"+ " " +minday);
+//         }
+//         else
+//         {
+//             System.out.println("no");
+//         }
+//     }
+// }
+
+public class maxfood
+{
     public static void main(String[] args) {
         int s=10;
         int n=16;
         int m=2;
+        System.out.println(food(s,n,m));
+    }
+    public static String food(int s,int n,int m)
+    {
         if(n<m)
         {
-            System.out.println("no");
+            System.out.println("NO");
         }
-        int totalmeal=s*m;
-        int totalsunday=(s/7);
-        int availableday=s-totalsunday;
-        int minday=(int)Math.ceil((double)totalmeal/n);
-        if(minday<=availableday)
+        int totalday=s/7;
+        int avaiableday=s-totalday;
+        int totalfood=s*m;
+        int minday=(int)Math.ceil((double)totalfood/n);
+        if(avaiableday>minday)
         {
-            System.out.println("yes"+ " " +minday);
+            return "Yes" + minday;
         }
-        else
-        {
-            System.out.println("no");
-        }
+        return "no";
     }
 }
