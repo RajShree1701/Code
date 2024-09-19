@@ -1,35 +1,23 @@
 import java.util.*;
-class dectonbase {
-    public static void main(String ars[])
-    {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int num=sc.nextInt();
-        System.out.println(dectonbase1(n,num));
-        sc.close();
+
+public class dectonbase
+{
+    public static void main(String[] args) {
+        int n=12;
+        int nums=718;
+        System.out.println(base(n,nums));
     }
-    public static String dectonbase1(int n,int num)
+    public static String base(int n,int nums)
     {
-        String res="";
-        int quotient=num/n;
-        ArrayList<Integer> rem=new ArrayList<>();
-        rem.add(num%n);
-        while(quotient!=0)
+        String str="0123456789ABCDEF";
+        StringBuilder result=new StringBuilder();
+        while(nums>0)
         {
-            rem.add(quotient%n);
-            quotient=quotient/n;
+            int rem=nums%n;
+            result.append(str.charAt(rem));
+            nums=nums/n;
         }
-        for(int i=0;i<rem.size();i++)
-        {
-            if(rem.get(i)>9)
-            {
-                res=(char)(rem.get(i)-9+64)+res;
-            }
-            else
-            {
-                res=rem.get(i)+res;
-            }
-        }
-        return res;
+        result.reverse();
+        return String.valueOf(result);
     }
 }
