@@ -1,21 +1,18 @@
 import java.util.HashSet;
-public class autobionumber {
-   public static void main(String[] args) {
-        String num = "1210";
-        countt(num);
+
+public class autobionumber
+{
+    public static void main(String[] args) {
+        String c="1210";
+        System.out.println(auto(c));
     }
-
-    public static void countt(String num) {
-        // Create a HashSet to store unique characters
-        HashSet<Character> s = new HashSet<>();
-
-        // Add each character of the string to the set
-        for (char c : num.toCharArray()) {
-            s.add(c);
+    public static int auto(String c)
+    {
+        HashSet <Character> s =new HashSet<>();
+        for(char i:c.toCharArray())
+        {
+            s.add(i);
         }
-
-        // Print the size of the set (number of unique characters)
-        System.out.println(s.size());
+        return s.size();
     }
 }
-
