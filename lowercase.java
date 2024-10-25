@@ -1,3 +1,4 @@
+//count of lowercase in any word. ex: input raj, output:3 and input RAJ,output:0
 import java.util.*;
 public class lowercase {
     public static void main(String[] args) {

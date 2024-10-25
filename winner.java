@@ -16,6 +16,7 @@ public class winner {
                 votecount.put(team[i], votecount.getOrDefault(team[i], 0) + 1);
             }
         }
+        System.out.println(votecount);
         int maxvotes=0;
         int winner=-1;
         boolean tie=false;
@@ -41,3 +42,4 @@ public class winner {
         return winner;
     }
 }
+

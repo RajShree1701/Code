@@ -9,7 +9,6 @@ public class oddandeven {
         {
             a[i]=sc.nextInt();
         }
-
         System.out.println(oddeven1(n, a));
         sc.close();
     }

@@ -31,6 +31,6 @@ public class zeropositioneven {
         Collections.reverse(odd);
         System.out.println(even);
         System.out.println(odd);
-        return even.get(even.size()-2)+odd.get(odd.size()-2);
+        return even.get(even.size()-2)+odd.get(odd.size()-2);// add of second largers in even and second smallest in odd
     }
 }
