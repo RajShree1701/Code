@@ -1,3 +1,4 @@
+//find the average of non negative number
 public class sumofnonnegative {
     public static void main(String[] args) {
         int a[]={-3,-2,0,-7,25,12,-11};

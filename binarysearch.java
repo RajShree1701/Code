@@ -36,8 +36,8 @@ public class binarysearch
 {
     public static void main(String ars[])
     {
-          int a[]={1,2,3,4};
-         int n=3;
+        int a[]={1,2,3,4};
+        int n=3;
         System.out.println(binary(a,n));
     }
     public static int binary(int a[],int n)
